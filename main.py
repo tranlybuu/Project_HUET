@@ -2,7 +2,7 @@
 import folder, web
 
 def start():
-    url_list = ['https://vietnamnet.vn']  #Chứa các đường link chưa duyệt
+    url_list = ['https://codelearn.io/']  #Chứa các đường link chưa duyệt
     history=[]  #Chứa các đường link đã duyệt
     max_page=100    #Quy định số lượng trang web được tải về
     count=0     #Đếm số lượng trang web đã tải
@@ -26,8 +26,13 @@ def start():
     #TEST CODE
     for i in history:
         print("Đã duyệt  -- ",i)
+    print("================")
     print("Số lượng url đã duyệt:",count)
     print("Số lượng url chưa duyệt:", len(url_list))
+    print("================")
+    print("{} url đang ở hàng chờ".format(count//2))
+    for i in range(count//2):
+        print("Chưa duyệt  -- ",url_list[i])
 
 
 if __name__ == '__main__':
