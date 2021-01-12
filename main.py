@@ -4,7 +4,7 @@ import folder, web
 def start():
     url_list = ['https://vietnamnet.vn']  #Chứa các đường link chưa duyệt
     history=[]  #Chứa các đường link đã duyệt
-    max_page=10    #Quy định số lượng trang web được tải về
+    max_page=100    #Quy định số lượng trang web được tải về
     count=0     #Đếm số lượng trang web đã tải
     data_folder = 'C:\\Users\\DELL\\Downloads\\CRAWLER'
 
