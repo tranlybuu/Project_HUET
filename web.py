@@ -27,7 +27,7 @@ def lay_cac_duong_link(content):
 #Hàm kiểm tra tính hợp lệ của 1 đường link
 #Kết quả trả về: True nếu hợp lệ / False nếu không hợp lệ
 def kiem_tra_link(link):
-    if link
+    pass
 
 #Hàm chỉnh sửa đường link nếu đường link không đầy đủ
 #Kết quả trả về là 1 đường link đầy đủ
