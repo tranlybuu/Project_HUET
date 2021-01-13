@@ -1,3 +1,6 @@
+#Project Web Crawler
+#Trần Lý Bửu - K1
+
 #Các thư viện cần dùng
 import requests
 from bs4 import BeautifulSoup
