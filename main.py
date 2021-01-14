@@ -1,5 +1,5 @@
 #Project Web Crawler
-#Trần Lý Bửu - K1
+#Trần Lý Bửu - K1 :)
 
 #Các thư viện cần dùng
 import  folder, web
