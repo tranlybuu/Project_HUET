@@ -23,7 +23,7 @@ def kiem_tra(path):
     # Nếu chưa có file History.txt thì tạo thư mục trong CRAWLER
     if 'History.txt' not in check:
         line_1 = "\t+------------------------------------------------------+\n"
-        line_2 = "\t|  Đây là file ghi lại lịch sử các url đã cào dữ liệu  |\n\t"
+        line_2 = "\t|  Đây là file ghi lại lịch sử các url đã cào dữ liệu  |\n"
         line_3 = "\t+------------------------------------------------------+\n\n"
         line_4 = "Số thứ tự của đường link chính là số thứ tự của thư mục chứa nội dung đường dẫn đã cào\n"
         line_5 = "<Ví dụ đường dẫn có số thứ tự 1 thì thư mục chứ nội dung là Trang_web_đã_cào_dữ_liệu_thứ_1>\n\n"
@@ -36,7 +36,7 @@ def kiem_tra(path):
     # Nếu chưa có file Error.txt thì tạo thư mục trong CRAWLER
     if 'Error.txt' not in check:
         line_1 = "\t+-----------------------------------------------------+\n"
-        line_2 = "\t|  Đây là file ghi lại các url không thể cào dữ liệu  |\n\t"
+        line_2 = "\t|  Đây là file ghi lại các url không thể cào dữ liệu  |\n"
         line_3 = "\t+-----------------------------------------------------+\n\n"
         content = [line_1, line_2, line_3]
         file = open("Error.txt", "w", encoding="utf-8")
