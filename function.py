@@ -12,4 +12,4 @@ def lam_sach_man_hinh(url, count):
     print("\tBạn muốn cào dữ liệu bắt đầu từ url:",url)
     print("\tTổng số trang bạn muốn cào là:",count)
     print("\t----------------------------")
-    print("\tLoading...")
+    print("\tLoading...\n")

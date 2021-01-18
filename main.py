@@ -57,7 +57,7 @@ def start(first_url, max_page):
             name_folder = folder.tao_ten_folder_tu_dong(data_folder,url)    #Tạo thư mục tự động và kết quả trả về là tên thư mục vừa tạo
             folder.luu_file(data_array, name_folder)
             folder.luu_lich_su_cac_url(url)
-            print("Đã duyệt " + str(count) + " url")
+            print("\tĐã duyệt " + str(count) + " url")
         except:
             print(" Có đường dẫn bị lỗi ")
             error.append(url)
@@ -70,7 +70,7 @@ def start(first_url, max_page):
             print(str(i+1) + " - " + str(error[i]))
     else:
         print("\n\tKhông có đường dẫn nào bị lỗi")
-    print("\n\t+--------------------------------------------+\n\t| Dữ liệu đã cào đã được lưu tại C:\\CRAWLER |\n\t+--------------------------------------------+\n\t")
+    print("\n\t+-------------------------------------------+\n\t| Dữ liệu đã cào đã được lưu tại C:\\CRAWLER |\n\t+-------------------------------------------+\n\t")
 
 if __name__ == '__main__':
     first_url = str(input("Nhập đường dẫn ban đầu bạn muốn cào dữ liệu: "))
