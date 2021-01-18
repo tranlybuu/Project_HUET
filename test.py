@@ -8,6 +8,9 @@ import os
 from datetime import date, datetime
 import requests
 from bs4 import BeautifulSoup
+import sys
+import time
+
 
 """
 txt = "The rain in Span"
@@ -88,6 +91,7 @@ file.close()
 
 """
 
+"""
 line_1 = "\t+-----------------------------------------------------+\n"
 line_2 = "\t|  Đây là file ghi lại các url không thể cào dữ liệu  |\n\t"
 line_3 = "\t+-----------------------------------------------------+\n\n"
@@ -96,6 +100,38 @@ line_5 = "<Ví dụ đường dẫn có số thứ tự 1 thì thư mục chứ 
 content = [line_1, line_2, line_3, line_4, line_5]
 for i in content:
     print(i)
+"""
+
+
+
+toolbar_width = 40
+
+# setup toolbar
+sys.stdout.write("[%s]" % (" " * toolbar_width))
+sys.stdout.flush()
+sys.stdout.write("\b" * (toolbar_width+1)) # return to start of line, after '['
+
+for i in range(toolbar_width):
+    # update the bar
+    time.sleep(0.1)
+    sys.stdout.write("=")
+    sys.stdout.flush()
+
+sys.stdout.write("]\n") # this ends the progress bar
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

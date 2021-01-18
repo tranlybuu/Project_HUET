@@ -13,13 +13,12 @@ def start(first_url, max_page):
     count=0     #Đếm số lượng trang web đã tải
     folder.kiem_tra("C:\\")    #Kiểm tra và tạo thư mục CRAWLER để lưu trữ
     data_folder = 'C:\\CRAWLER'     #Lưu vào ổ C thư mục CRAWLER
-
     url_list.append(str(first_url))
 
     #kịch bản các trang web
     while (count < max_page) and (len(url_list) > 0):
-        if (count == 0) or (count % 20 == 0):
-            function.lam_sach_man_hinh(first_url, max_page)
+        if (count == 0) or (count % 5 == 0):
+            function.lam_sach_va_tom_tat_lai(first_url, max_page, count)
         url_new = []  # Chứa các đường link mới được tìm thấy
         url_new_const = 500  #Số lượng tối đa mà danh sách các đường dẫn mới tìm thấy có thể chứa
         url = url_list.pop(0)   #Lấy đường dẫn đầu tiên trong danh sách chưa duyệt
@@ -59,17 +58,18 @@ def start(first_url, max_page):
             folder.luu_lich_su_cac_url(url)
             print("\tĐã duyệt " + str(count) + " url")
         except:
-            print(" Có đường dẫn bị lỗi ")
+            print("\tCó đường dẫn bị lỗi ")
             error.append(url)
             folder.error_url(url)
 
+    function.lam_sach_va_tom_tat_lai(first_url, max_page, count)
     #Thông báo
     if len(error) != 0:
-        print("\n\tCó " + str(len(error)) +  " đường dẫn không lấy được dữ liệu:")
+        print("\tCó " + str(len(error)) +  " đường dẫn không lấy được dữ liệu:")
         for i in range(len(error)):
             print(str(i+1) + " - " + str(error[i]))
     else:
-        print("\n\tKhông có đường dẫn nào bị lỗi")
+        print("\tKhông có đường dẫn nào bị lỗi")
     print("\n\t+-------------------------------------------+\n\t| Dữ liệu đã cào đã được lưu tại C:\\CRAWLER |\n\t+-------------------------------------------+\n\t")
 
 if __name__ == '__main__':

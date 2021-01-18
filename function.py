@@ -6,10 +6,11 @@ import os
 
 #Các hàm cần thiết
 
-#Hàm này dùng để xóa sạch có dữ liệu đã được in ra trên màn hình
-def lam_sach_man_hinh(url, count):
+#Hàm này dùng để xóa sạch có dữ liệu thừa đã được in ra trên màn hình
+#và tóm tắt lại nhưng thông tin cần thiết
+def lam_sach_va_tom_tat_lai(url, max_page, count):
     os.system('cls')
-    print("\tBạn muốn cào dữ liệu bắt đầu từ url:",url)
-    print("\tTổng số trang bạn muốn cào là:",count)
+    print("\n\tBạn muốn cào dữ liệu bắt đầu từ url:",url)
+    print("\tTổng số trang bạn muốn cào là:", max_page)
     print("\t----------------------------")
-    print("\tLoading...\n")
+    print("\tĐã thực hiện được {}% \n".format(round((count / max_page) *100)))
