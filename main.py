@@ -53,7 +53,7 @@ def start(first_url, max_page):
             # 1. Nội dung HTML
             # 2. Danh sách mới tìm thấy
             # 3. Đường dẫn gốc
-            # 4. #Số lượng tối đa mà danh sách các đường dẫn mới tìm thấy có thể chứa
+            # 4. Số lượng tối đa mà danh sách các đường dẫn mới tìm thấy có thể chứa
             name_folder = folder.tao_ten_folder_tu_dong(data_folder,url)    #Tạo thư mục tự động và kết quả trả về là tên thư mục vừa tạo
             folder.luu_file(data_array, name_folder)
             folder.luu_lich_su_cac_url(url)
