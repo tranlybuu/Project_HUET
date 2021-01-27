@@ -6,8 +6,6 @@ import os
 
 #Các hàm cần thiết
 
-#Hàm này dùng để xóa sạch có dữ liệu thừa đã được in ra trên màn hình
-#và tóm tắt lại nhưng thông tin cần thiết
 def lam_sach_va_tom_tat_lai(url, max_page, count):
     os.system('cls')
     print("\n\tBạn muốn cào dữ liệu bắt đầu từ url:",url)

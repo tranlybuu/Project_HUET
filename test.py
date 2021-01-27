@@ -121,7 +121,13 @@ sys.stdout.write("]\n") # this ends the progress bar
 
 
 
+#Nhap duong dan
 
+#Tao cac danh sach
+
+#Them url vao hang cho
+
+#Tao folder
 
 
 
