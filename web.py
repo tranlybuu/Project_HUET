@@ -4,7 +4,6 @@
 #Các thư viện cần dùng
 import requests
 from bs4 import BeautifulSoup
-import re
 
 
 #Các hàm cần thiết
@@ -37,13 +36,10 @@ def lay_cac_duong_link(content):
 
 
 def kiem_tra_link(link):
-    check = re.search("^http", link)
-    try:
-        if link == check.string:
-            return True
-        except:
-            return False
-
+    if link[:4] == "http":
+        return True
+    else:
+        return False
 
 def chinh_sua_link(url,item):
     item = item.split(" ")
