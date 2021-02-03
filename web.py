@@ -27,15 +27,16 @@ def lay_cac_duong_link(content):
     for item in url_list:
         item = str(item)
         # Lấy các đường dẫn đầy đủ
-        if not(item.find("http", 0, 4)):
+        if not (item.find("http", 0, 4)):
             result.append(item)
         # Lấy các đường dẫn còn thiếu http...
-        if not (item.find("http", 0, 4)):   #Lấy các đường dẫn chưa có http
-            if not (item.find("java", 0, 4)):   #Loại các phần tử Javascript
-                    if not (item.find("#", 0, 4)):   #Loại các phần tử "#"
-                        if not (item.find("None", 0, 4)):   #Loại các phần tử None
-                            if len(item) > 2:
-                                result.append(item)
+        else:
+            if not (item.find("http", 0, 4)):   #Lấy các đường dẫn chưa có http
+                if not (item.find("java", 0, 4)):   #Loại các phần tử Javascript
+                        if not (item.find("#", 0, 4)):   #Loại các phần tử "#"
+                            if not (item.find("None", 0, 4)):   #Loại các phần tử None
+                                if len(item) > 2:
+                                    result.append(item)
     return result
 
 #Hàm này dùng để chỉnh sửa đường dẫn
