@@ -103,7 +103,7 @@ for i in content:
 """
 
 
-
+"""
 toolbar_width = 40
 
 # setup toolbar
@@ -118,18 +118,13 @@ for i in range(toolbar_width):
     sys.stdout.flush()
 
 sys.stdout.write("]\n") # this ends the progress bar
+"""
 
-
-
-#Nhap duong dan
-
-#Tao cac danh sach
-
-#Them url vao hang cho
-
-#Tao folder
-
-
+a = False
+if not a:
+    print("F")
+else:
+    print("T")
 
 
 
