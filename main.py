@@ -72,6 +72,7 @@ def start(first_url, max_page):
     else:
         print("\tKhông có đường dẫn nào bị lỗi")
     print("\n\t+-------------------------------------------+\n\t| Dữ liệu đã cào đã được lưu tại C:\\CRAWLER |\n\t+-------------------------------------------+\n\t")
+    end = input("ENTER để kết thúc chương trình")
 
 if __name__ == '__main__':
     first_url = str(input("Nhập đường dẫn ban đầu bạn muốn cào dữ liệu: "))
